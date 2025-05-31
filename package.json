@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "rm src/abi/ContractAbi.json && cd contracts && forge inspect Contract abi >> ../src/abi/ContractAbi.json",
-    "dev": "next dev",
+    "dev": "next dev -p 8080",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8080",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +15,7 @@
     "@types/react-dom": "18.2.4",
     "@wagmi/core": "^2.6.9",
     "@worldcoin/idkit": "^1.1.4",
+    "@worldcoin/minikit-js": "^1.9.4",
     "autoprefixer": "10.4.14",
     "connectkit": "^1.7.2",
     "eslint": "8.40.0",
